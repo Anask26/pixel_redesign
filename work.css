@@ -1,0 +1,289 @@
+/* Case study pages — Pixel Bridge tokens from home.css */
+
+.cs {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 var(--space-2xl);
+}
+
+.cs-top {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.cs-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.1rem;
+}
+
+.cs-num {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+.cs-title {
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin-bottom: 0.9rem;
+}
+
+.cs-lede {
+  max-width: 38rem;
+  color: var(--text-gray);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.cs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cs-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+  padding: 1.4rem;
+  background: var(--lavender-light);
+  border-radius: var(--radius);
+  align-self: end;
+}
+
+.cs-meta dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  margin-bottom: 0.25rem;
+}
+
+.cs-meta dd {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Device stage */
+.cs-stage {
+  position: relative;
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.laptop {
+  background: var(--dark);
+  border-radius: 20px;
+  padding: 0.7rem 0.7rem 1rem;
+}
+
+.laptop__chrome {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.15rem 0.4rem 0.65rem;
+}
+
+.laptop__chrome span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.laptop__chrome span:first-child {
+  background: var(--lavender);
+}
+
+.laptop__screen {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--lavender-light);
+}
+
+.laptop__screen img,
+.phone__screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.laptop__base {
+  width: 42%;
+  height: 8px;
+  margin: 0.55rem auto 0;
+  background: #2a2233;
+  border-radius: 0 0 8px 8px;
+}
+
+.phone {
+  position: absolute;
+  right: 5%;
+  bottom: -1.25rem;
+  width: min(28%, 190px);
+  background: var(--dark);
+  border-radius: 28px;
+  padding: 0.7rem 0.5rem 0.85rem;
+  box-shadow: 0 18px 40px rgba(23, 18, 31, 0.22);
+}
+
+.phone__notch {
+  width: 38%;
+  height: 6px;
+  margin: 0 auto 0.45rem;
+  background: #2a2233;
+  border-radius: 999px;
+}
+
+.phone__screen {
+  position: relative;
+  aspect-ratio: 9 / 19;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #d8d3eb;
+}
+
+.cs-ph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-gray);
+  border: 1.5px dashed var(--border);
+  border-radius: inherit;
+}
+
+.cs-ph small {
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  font-size: 0.65rem;
+  opacity: 0.75;
+  word-break: break-all;
+}
+
+
+/* Delivered */
+.cs-split {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.cs-split h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.cs-split p {
+  color: var(--text-gray);
+  line-height: 1.7;
+  max-width: 40rem;
+}
+
+.cs-list {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.cs-list li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cs-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--lavender);
+}
+
+/* Next projects */
+.cs-next {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: var(--space-xl);
+}
+
+.cs-next a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.35rem;
+  background: var(--lavender-light);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.cs-next a:last-child {
+  background: var(--dark);
+  color: #fff;
+}
+
+.cs-next a:hover {
+  transform: translateY(-2px);
+  transition: transform 0.25s var(--ease);
+}
+
+.cs-next span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+@media (min-width: 860px) {
+  .cs-top {
+    grid-template-columns: minmax(0, 1.4fr) minmax(16rem, 0.7fr);
+    align-items: end;
+    gap: 2.5rem;
+  }
+
+  .cs-split {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .cs-next {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .phone {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(200px, 56%);
+    margin: 1rem auto 0;
+  }
+
+  .laptop__base {
+    display: none;
+  }
+}
