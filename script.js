@@ -112,3 +112,205 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothAnchors();
   initFaq();
 });
+
+
+/* ========================================
+   PIXEL BRIDGE — INTERACTIVE SERVICES
+======================================== */
+
+(() => {
+  const serviceIndex = document.querySelector(".service-index");
+
+  if (!serviceIndex) return;
+
+  // Service content and corresponding image paths
+  const options = [
+    {
+      number: "01",
+      category: "WEBSITE DEVELOPMENT",
+
+      title: "Websites built to do more than look good.",
+
+      description:
+        "We design and develop responsive websites that communicate your value, build trust, and help turn visitors into enquiries.",
+
+      benefits: [
+        "Responsive website design",
+        "Clear, user-friendly layouts",
+        "Basic technical and on-page SEO"
+      ],
+
+      caption: "Selected work · eCorner",
+
+      image: "pictures/service-1.png",
+
+      imageAlt: "eCorner electronics store website developed by Pixel Bridge"
+    },
+
+    {
+      number: "02",
+      category: "WEBSITE CARE & MAINTENANCE",
+
+      title: "Your website shouldn't be forgotten after launch.",
+
+      description:
+        "We help keep your website updated and functional through agreed content changes, troubleshooting, and practical improvements.",
+
+      benefits: [
+        "Content and image updates",
+        "Bug fixes and troubleshooting",
+        "Ongoing improvements as agreed"
+      ],
+
+      caption: "Website care & maintenance",
+
+      image: "pictures/service-2.png",
+
+      imageAlt: "Website care and maintenance service preview"
+    },
+
+    {
+      number: "03",
+      category: "BUSINESS SOLUTIONS & STRATEGY",
+
+      title: "Understand the problem before building.",
+
+      description:
+        "We help businesses review their online presence, identify areas for improvement, and consider practical digital solutions before committing to a build.",
+
+      benefits: [
+        "Website and digital experience reviews",
+        "Customer journey improvements",
+        "Practical recommendations"
+      ],
+
+      caption: "Our approach to digital strategy",
+
+      image: "pictures/service-3.png",
+
+      imageAlt: "Business solutions and digital strategy preview"
+    },
+
+    {
+      number: "04",
+      category: "WEBSITE REDESIGN & OPTIMISATION",
+
+      title: "Make your existing website work better.",
+
+      description:
+        "We improve existing websites with clearer layouts, more consistent design, and responsive experiences suited to your business and visitors.",
+
+      benefits: [
+        "Layout and visual improvements",
+        "Mobile responsiveness",
+        "Usability and content refinements"
+      ],
+
+      caption: "Website redesign & optimisation",
+
+      image: "pictures/service-4.png",
+
+      imageAlt: "Website redesign and optimisation preview"
+    }
+  ];
+
+  const buttons = [
+    ...serviceIndex.querySelectorAll(".service-option")
+  ];
+
+  const art = serviceIndex.querySelector("#preview-art");
+
+  const number = serviceIndex.querySelector("#preview-number");
+  const category = serviceIndex.querySelector("#preview-category");
+  const caption = serviceIndex.querySelector("#preview-caption");
+  const title = serviceIndex.querySelector("#preview-title");
+  const description = serviceIndex.querySelector("#preview-description");
+  const benefits = serviceIndex.querySelector("#preview-benefits");
+
+  // Find the image inside the existing browser mockup
+  const previewImage = art
+    ? art.querySelector(".service-preview-image")
+    : null;
+
+  let currentIndex = 0;
+  let transitionTimer;
+
+  function selectService(index) {
+    const service = options[index];
+
+    if (!service || !art) return;
+
+    currentIndex = index;
+
+    // Update active service button
+    buttons.forEach((button, buttonIndex) => {
+      const isActive = buttonIndex === index;
+
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    // Start preview transition
+    window.clearTimeout(transitionTimer);
+
+    art.classList.add("is-changing");
+
+    transitionTimer = window.setTimeout(() => {
+      // Update service information
+      if (number) {
+        number.textContent = service.number;
+      }
+
+      if (category) {
+        category.textContent = service.category;
+      }
+
+      if (caption) {
+        caption.textContent = service.caption;
+      }
+
+      if (title) {
+        title.textContent = service.title;
+      }
+
+      if (description) {
+        description.textContent = service.description;
+      }
+
+      // Update the preview image
+      if (previewImage) {
+        previewImage.src = service.image;
+        previewImage.alt = service.imageAlt;
+      }
+
+      // Update benefits
+      if (benefits) {
+        benefits.replaceChildren();
+
+        service.benefits.forEach((benefit) => {
+          const item = document.createElement("li");
+
+          item.textContent = benefit;
+
+          benefits.appendChild(item);
+        });
+      }
+
+      // Finish transition
+      art.classList.remove("is-changing");
+
+    }, 150);
+  }
+
+  // Attach click events to service buttons
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      selectService(index);
+    });
+  });
+
+  // Display the first service on initial page load
+  selectService(currentIndex);
+
+})();
+
