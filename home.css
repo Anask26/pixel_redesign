@@ -1879,7 +1879,7 @@ ul {
 
 .process__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -2110,7 +2110,19 @@ ul {
 
 .member-card:has(.faizal-khan) .member-card__role {
   color: rgba(255, 255, 255, 0.85);
-  margin: 0 1.75rem 1.75rem;
+  margin: 0 1.75rem 0.4rem;
+}
+
+.member-card__bio {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-gray);
+}
+
+.member-card:has(.faizal-khan) .member-card__bio {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 1.75rem 1.5rem;
+  max-width: 28ch;
 }
 
 .member-card--dark {
@@ -2130,7 +2142,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 85%;
   border-radius: inherit;
 }
 
@@ -2204,6 +2216,21 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.contact-banner__title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0.55rem;
+}
+
+.contact-banner__text {
+  max-width: 36rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
 }
 
 .contact-banner__email {
@@ -2302,3 +2329,77 @@ ul {
     width: 100%;
   }
 }
+
+
+/*TILL 30th*/
+/* ========================================
+HOMEPAGE TEMPORARY STUDIO CARD
+======================================== */
+
+.work-media--studio {
+  display: flex;
+  align-items: stretch;
+  min-height: 230px;
+  overflow: hidden;
+  background: #171916;
+  color: #f5f4ef;
+  }
+  
+  .work-media__studio-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  padding: 28px;
+  box-sizing: border-box;
+  }
+  
+  .work-media__studio-label {
+  color: #c5c9b8;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  }
+  
+  .work-media__studio-content h4 {
+  margin: 35px 0;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  }
+  
+  .work-media__studio-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #d1d2c9;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  }
+  
+  .work-media__studio-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a9b49b;
+  flex-shrink: 0;
+  }
+  
+  .work-item--studio .work-item__link {
+  text-underline-offset: 4px;
+  }
+  
+  @media (max-width: 600px) {
+  .work-media--studio,
+  .work-media__studio-content {
+  min-height: 240px;
+  }
+  
+  .work-media__studio-content {
+  padding: 22px;
+  }
+  }
+  

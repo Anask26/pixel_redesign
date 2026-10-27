@@ -26,7 +26,7 @@
 
 .cs-title {
   font-size: clamp(2.1rem, 5vw, 3.6rem);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.08;
   margin-bottom: 0.9rem;
@@ -101,7 +101,7 @@
 
 .laptop__screen {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 24 / 11.2;
   overflow: hidden;
   border-radius: 10px;
   background: var(--lavender-light);
@@ -145,7 +145,7 @@
 
 .phone__screen {
   position: relative;
-  aspect-ratio: 9 / 19;
+  aspect-ratio: 12 / 21;
   overflow: hidden;
   border-radius: 16px;
   background: #d8d3eb;
@@ -287,3 +287,648 @@
     display: none;
   }
 }
+
+/* ========================================
+NELLAI FARM HOUSE — PROJECT OVERVIEW
+======================================== */
+
+.nellai-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  
+  /* Left introduction */
+  
+  .nellai-overview__intro {
+  max-width: 460px;
+  }
+  
+  .nellai-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #a06a3b;
+  }
+  
+  .nellai-overview__intro h2 {
+  max-width: 420px;
+  margin: 0 0 24px;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+  }
+  
+  .nellai-overview__intro p {
+  margin: 0;
+  max-width: 430px;
+  font-size: 16px;
+  line-height: 1.9;
+  opacity: 0.72;
+  }
+  
+  /* Right feature list */
+  
+  .nellai-overview__features {
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  }
+  
+  .nellai-feature {
+  display: grid;
+  grid-template-columns: 42px 1fr 24px;
+  gap: 20px;
+  align-items: start;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  transition: padding 0.3s ease;
+  }
+  
+  .nellai-feature:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+  
+  .nellai-feature__number {
+  padding-top: 5px;
+  }
+  /* ========================================
+NETWORK LOGISTICS — PROJECT OVERVIEW
+Matching Nellai Farm House design
+======================================== */
+
+.network-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  
+  /* Left introduction */
+  
+  .network-overview__intro {
+  max-width: 460px;
+  }
+  
+  .network-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  }
+  
+  .network-overview__intro h2 {
+  max-width: 420px;
+  margin: 0 0 24px;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+  }
+  
+  .network-overview__intro p {
+  margin: 0;
+  max-width: 430px;
+  font-size: 16px;
+  line-height: 1.9;
+  opacity: 0.72;
+  }
+  
+  /* Right feature list */
+  
+  .network-overview__features {
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  }
+  
+  .network-feature {
+  display: grid;
+  grid-template-columns: 42px 1fr 24px;
+  gap: 20px;
+  align-items: start;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  transition: padding 0.3s ease;
+  }
+  
+  .network-feature:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+  
+  .network-feature__number {
+  padding-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.55;
+  }
+  
+  .network-feature h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  }
+  
+  .network-feature p {
+  max-width: 340px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.65;
+  }
+  
+  .network-feature__arrow {
+  font-size: 20px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+  }
+  
+  .network-feature:hover .network-feature__arrow {
+  transform: translate(3px, -3px);
+  opacity: 1;
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 900px) {
+  .network-overview {
+  grid-template-columns: 1fr;
+  gap: 48px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  }
+  
+  .network-overview__intro {
+  max-width: 600px;
+  }
+  
+  .network-overview__intro h2 {
+  max-width: 500px;
+  }
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 600px) {
+  .network-overview {
+  gap: 36px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  }
+  
+  .network-label {
+  margin-bottom: 18px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  }
+  
+  .network-overview__intro h2 {
+  font-size: 38px;
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+  }
+  
+  .network-overview__intro p {
+  font-size: 14px;
+  line-height: 1.85;
+  }
+  
+  .network-feature {
+  grid-template-columns: 28px 1fr 18px;
+  gap: 12px;
+  padding: 24px 0;
+  }
+  
+  .network-feature h3 {
+  font-size: 17px;
+  }
+  
+  .network-feature p {
+  font-size: 13px;
+  line-height: 1.75;
+  }
+  
+  .network-feature__arrow {
+  font-size: 17px;
+  }
+  }
+
+  /* ========================================
+VIPA HEALTH MIX — PROJECT OVERVIEW
+======================================== */
+
+.vipa-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  
+  /* Left introduction */
+  
+  .vipa-overview__intro {
+  max-width: 460px;
+  }
+  
+  .vipa-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #a06a3b;
+  }
+  
+  .vipa-overview__intro h2 {
+  max-width: 420px;
+  margin: 0 0 24px;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+  }
+  
+  .vipa-overview__intro p {
+  max-width: 430px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
+  opacity: 0.72;
+  }
+  
+  /* Right feature list */
+  
+  .vipa-overview__features {
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  }
+  
+  .vipa-feature {
+  display: grid;
+  grid-template-columns: 42px 1fr 24px;
+  gap: 20px;
+  align-items: start;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  transition: padding 0.3s ease;
+  }
+  
+  .vipa-feature:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+  
+  .vipa-feature__number {
+  padding-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.55;
+  }
+  
+  .vipa-feature h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  }
+  
+  .vipa-feature p {
+  max-width: 340px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.65;
+  }
+  
+  .vipa-feature__arrow {
+  font-size: 20px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+  }
+  
+  .vipa-feature:hover .vipa-feature__arrow {
+  transform: translate(3px, -3px);
+  opacity: 1;
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 900px) {
+  .vipa-overview {
+  grid-template-columns: 1fr;
+  gap: 48px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  }
+  
+  .vipa-overview__intro {
+  max-width: 600px;
+  }
+  
+  .vipa-overview__intro h2 {
+  max-width: 500px;
+  }
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 600px) {
+  .vipa-overview {
+  gap: 36px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  }
+  
+  .vipa-label {
+  margin-bottom: 18px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  }
+  
+  .vipa-overview__intro h2 {
+  font-size: 38px;
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+  }
+  
+  .vipa-overview__intro p {
+  font-size: 14px;
+  line-height: 1.85;
+  }
+  
+  .vipa-feature {
+  grid-template-columns: 28px 1fr 18px;
+  gap: 12px;
+  padding: 24px 0;
+  }
+  
+  .vipa-feature h3 {
+  font-size: 17px;
+  }
+  
+  .vipa-feature p {
+  font-size: 13px;
+  line-height: 1.75;
+  }
+  
+  .vipa-feature__arrow {
+  font-size: 17px;
+  }
+  }
+
+  /* ========================================
+   FAZZA BUILDERS — PROJECT OVERVIEW
+======================================== */
+
+.fazza-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  padding: 120px 0;
+}
+
+.fazza-overview__intro {
+  max-width: 480px;
+}
+
+.fazza-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #9b7653;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.fazza-overview__intro h2 {
+  margin: 0 0 24px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+}
+
+.fazza-overview__intro > p {
+  margin: 0;
+  color: #737373;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.fazza-overview__features {
+  display: flex;
+  flex-direction: column;
+}
+
+.fazza-feature {
+  display: grid;
+  grid-template-columns: 42px 1fr 24px;
+  gap: 18px;
+  align-items: start;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  transition: padding 0.25s ease;
+}
+
+.fazza-feature:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.fazza-feature__number {
+  padding-top: 4px;
+  color: #9b7653;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fazza-feature h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.fazza-feature p {
+  margin: 0;
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.fazza-feature__arrow {
+  color: #9b7653;
+  font-size: 19px;
+  transition: transform 0.25s ease;
+}
+
+.fazza-feature:hover {
+  padding-left: 8px;
+}
+
+.fazza-feature:hover .fazza-feature__arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .fazza-overview {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 90px 0;
+  }
+
+  .fazza-overview__intro {
+    max-width: 620px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .fazza-overview {
+    gap: 36px;
+    padding: 64px 0;
+  }
+
+  .fazza-overview__intro h2 {
+    font-size: 34px;
+  }
+
+  .fazza-feature {
+    grid-template-columns: 30px 1fr 20px;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .fazza-feature h3 {
+    font-size: 16px;
+  }
+
+  .fazza-feature p {
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+ECORNER CASE STUDY
+======================================== */
+
+.ecorner-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  padding: 110px 0;
+  }
+  
+  .ecorner-overview__intro {
+  max-width: 460px;
+  }
+  
+  .ecorner-label {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #47765d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  }
+  
+  .ecorner-overview__intro h2 {
+  margin: 0 0 22px;
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  }
+  
+  .ecorner-overview__intro p {
+  margin: 0;
+  color: #707070;
+  font-size: 15px;
+  line-height: 1.9;
+  }
+  
+  .ecorner-overview__features {
+  border-top: 1px solid #e7e7e7;
+  }
+  
+  .ecorner-feature {
+  display: grid;
+  grid-template-columns: 36px 1fr 24px;
+  gap: 18px;
+  align-items: start;
+  padding: 26px 0;
+  border-bottom: 1px solid #e7e7e7;
+  transition: padding 0.25s ease;
+  }
+  
+  .ecorner-feature:hover {
+  padding-left: 8px;
+  }
+  
+  .ecorner-feature__number {
+  padding-top: 4px;
+  color: #47765d;
+  font-size: 12px;
+  font-weight: 600;
+  }
+  
+  .ecorner-feature h3 {
+  margin: 0 0 9px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  }
+  
+  .ecorner-feature p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.75;
+  }
+  
+  .ecorner-feature__arrow {
+  color: #47765d;
+  font-size: 20px;
+  transition: transform 0.25s ease;
+  }
+  
+  .ecorner-feature:hover .ecorner-feature__arrow {
+  transform: translate(3px, -3px);
+  }
+  
+  @media (max-width: 768px) {
+  .ecorner-overview {
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 70px 0;
+  }
+  
+  .ecorner-overview__intro {
+  max-width: 100%;
+  }
+  
+  .ecorner-feature {
+  grid-template-columns: 30px 1fr 20px;
+  gap: 12px;
+  }
+  }
+  
