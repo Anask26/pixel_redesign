@@ -182,11 +182,14 @@ ul {
 }
 
 .navbar__logo {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--dark);
+  color: #814ed5;
+}
+.navbar__logo-accent{
+  color: #9f74e1;
 }
 
 .navbar__links {
