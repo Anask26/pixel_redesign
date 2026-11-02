@@ -1,7 +1,7 @@
 /* Services page — uses existing Pixel Bridge tokens from home.css */
 
 .accent-lav {
-  color: var(--lavender);
+  color: var(--heading);
 }
 
 .service-banner__title {
@@ -528,7 +528,7 @@
 }
 
 .service-index__header h2 span {
-  color: var(--lavender);
+  color: var(--heading);
 }
 
 .service-index__header p {
