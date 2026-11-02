@@ -190,6 +190,7 @@ ul {
 }
 .navbar__logo-accent{
   color: #9f74e1;
+  font-weight: 300;
 }
 
 .navbar__links {
@@ -249,7 +250,7 @@ ul {
 }
 
 .hero__title {
-  font-size: clamp(2.35rem, 5.5vw, 4.25rem);
+  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
   font-weight: 600;
   font-family: 'Kedebideri', sans-serif;
   line-height: 1.12;
@@ -266,7 +267,7 @@ ul {
 .hero__sub {
   max-width: 36rem;
   margin: 0 auto 2.25rem;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1.4rem, 1.5vw, 1.125rem);
   color: var(--text-gray);
   line-height: 1.7;
 }
@@ -303,6 +304,7 @@ ul {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .stat-card__value {
@@ -352,7 +354,7 @@ ul {
 }
 
 .work__title {
-  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  font-size: clamp(2.2rem, 4.2vw, 3.25rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.12;
@@ -362,7 +364,7 @@ ul {
 .work__sub {
   max-width: 28rem;
   color: var(--text-gray);
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1.75rem;
 }
@@ -412,27 +414,28 @@ ul {
 }
 
 .work-item__num {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-gray);
   margin-bottom: 0.35rem;
 }
 
 .work-item__name {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
+  font-family: 'Kedebideri', sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
 
 .work-item__cat {
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   color: var(--text-gray);
   margin-bottom: 0.75rem;
 }
 
 .work-item__desc {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.55;
   color: var(--text-gray);
   margin-bottom: 1rem;
@@ -630,7 +633,7 @@ ul {
 .services-preview__title {
   max-width: 11ch;
   font-size: clamp(2.6rem, 5.2vw, 4.5rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.04;
   letter-spacing: -0.055em;
   color: var(--dark);
@@ -639,6 +642,7 @@ ul {
 .services-preview__title span {
   display: block;
   color: var(--heading);
+  font-weight: 100;
 }
 
 .services-preview__side {
@@ -650,7 +654,7 @@ ul {
   max-width: 26rem;
   margin-bottom: 2rem;
   color: var(--text-gray);
-  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-size: 1.3rem;
   line-height: 1.85;
 }
 
@@ -772,7 +776,7 @@ ul {
 .about-heading {
   margin: 0 0 24px;
   color: var(--dark);
-  font-size: clamp(36px, 4vw, 60px);
+  font-size: clamp(40px, 4vw, 60px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -2.5px;
@@ -780,13 +784,14 @@ ul {
 
 .about-heading span {
   color: var(--heading);
+  font-weight: 100;
 }
 
 .about-description {
   max-width: 540px;
   margin: 0;
   color: var(--text-gray);
-  font-size: 16px;
+  font-size: 1.3rem;
   line-height: 1.8;
 }
 
@@ -909,7 +914,7 @@ ul {
   }
 
   .about-description {
-    font-size: 14px;
+    font-size: 20.8px;
   }
 
   .about-highlights {
@@ -995,6 +1000,7 @@ ul {
 .approach-title > span {
   display: block;
   color: var(--heading);
+  font-weight: 100;
 }
 
 .approach-intro {
@@ -1008,7 +1014,7 @@ ul {
 .approach-intro > p {
   max-width: 27rem;
   color: var(--text-gray);
-  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+  font-size: clamp(1.3rem, 1.3vw, 1.08rem);
   line-height: 1.8;
 }
 
@@ -1146,7 +1152,7 @@ ul {
   position: absolute;
   color: #827b9c;
   font-family: "Kedebideri", cursive;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.35;
   transform: rotate(-7deg);
@@ -1227,7 +1233,7 @@ ul {
 .approach-mobile-stage p {
   max-width: 15.5rem;
   color: var(--text-gray);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -1717,7 +1723,7 @@ ul {
 
 .page-hero__title {
   font-size: clamp(2.25rem, 5vw, 3.75rem);
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -0.03em;
   line-height: 1.12;
   max-width: 18ch;
@@ -1730,12 +1736,13 @@ ul {
 
 .page-hero__title .accent {
   color: var(--heading);
+  font-weight: 700;
 }
 
 .page-hero__sub {
   max-width: 40rem;
   color: var(--text-gray);
-  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  font-size: clamp(1.3rem, 1.4vw, 1.125rem);
   line-height: 1.7;
 }
 
@@ -1814,7 +1821,7 @@ ul {
 
 .service-banner__text {
   max-width: 18rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.78);
   text-align: left;
@@ -2165,7 +2172,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 72%;
   border-radius: inherit;
 }
 
