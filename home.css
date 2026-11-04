@@ -1944,14 +1944,14 @@ ul {
 }
 
 .process-card__title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 
 .process-card__meta {
   margin-top: auto;
-  font-size: 0.8rem;
+  font-size: 1,2rem;
   color: var(--text-gray);
 }
 
@@ -2121,7 +2121,7 @@ ul {
 /* Dark gradient behind the text */
 .member-card:has(.faizal-khan)::after {
   content: "";
-  position: absolute;
+  position: relative;
   inset: 0;
   background: linear-gradient(
     to top,
@@ -2136,6 +2136,7 @@ ul {
 .member-card:has(.faizal-khan) .member-card__name {
   color: #fff;
   margin: 0 1.75rem 0.25rem;
+  font-size: 1.3rem;
 }
 
 .member-card:has(.faizal-khan) .member-card__role {
@@ -2144,7 +2145,7 @@ ul {
 }
 
 .member-card__bio {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--text-gray);
 }
@@ -2200,12 +2201,11 @@ ul {
 }
 
 .member-card__label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--dark);
-  opacity: 0.75;
+  color: black;
 }
 
 .member-card__list {
@@ -2217,7 +2217,7 @@ ul {
 .member-card__list li {
   position: relative;
   padding-left: 1rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.45;
   color: var(--dark);
 }
@@ -2254,7 +2254,7 @@ ul {
 
 .contact-banner__title {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.15;
   margin-bottom: 0.55rem;
@@ -2265,6 +2265,7 @@ ul {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.65;
   margin-bottom: 1.15rem;
+  font-size: 1.2rem;
 }
 
 .contact-banner__email {
